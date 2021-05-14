@@ -37,6 +37,10 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
