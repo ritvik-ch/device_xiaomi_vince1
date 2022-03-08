@@ -185,6 +185,7 @@ PRODUCT_PACKAGES += \
     Snap \
     android.frameworks.displayservice@1.0.vendor
 
+
 # Consumerir
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
@@ -209,11 +210,12 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
-	libvulkan \
+    libvulkan \
     liboverlay \
     libqdMetaData.system \
     libgenlock \
-    libtinyxml
+    libtinyxml \
+    vendor.display.config@1.0.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
