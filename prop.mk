@@ -135,6 +135,10 @@ persist.vendor.cne.feature=1
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.debug.coresight.config=stm-events
 
+# DHA Tunning
+PRODUCT_SYSTEM_PROPERTIES += \
+ro.config.dha_tunnable=1
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.composition.type=c2d \
@@ -294,6 +298,11 @@ ro.surface_flinger.use_smart_90_for_video=true \
 ro.surface_flinger.set_display_power_timer_ms=10000 \
 ro.surface_flinger.set_touch_timer_ms=5000 \
 ro.surface_flinger.set_idle_timer_ms=9000 \
+ro.surface_flinger.set_touch_timer_ms=200 \
+ro.surface_flinger.set_idle_timer_ms=80 \
+ro.surface_flinger.enable_frame_rate_override=true \
+ro.surface_flinger.start_graphics_allocator_service=true \
+ro.surface_flinger.running_without_sync_framework=true \
 ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # SOC
@@ -323,6 +332,11 @@ ril.subscription.types=NV,RUIM \
 ro.telephony.call_ring.multiple=false \
 ro.telephony.default_network=22,22 \
 ro.telephony.use_old_mnc_mcc_format=true \
+
+# Smoothens UI
+PRODUCT_SYSTEM_PROPERTIES += \
+persist.service.lgospd.enable=0 \
+persist.service.pcsync.enable=0
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
