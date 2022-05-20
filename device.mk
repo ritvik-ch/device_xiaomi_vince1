@@ -359,9 +359,9 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
     libandroid_net
 
-# Prebuilt Packages
+# GcamGOPrebuilt-V2
 PRODUCT_PACKAGES += \
-    GCamGo
+    GCamGOPrebuilt-V2
 
 # OMX
 PRODUCT_PACKAGES += \
