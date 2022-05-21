@@ -357,3 +357,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # IORap
 persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
+# Zygote Preforking
+PRODUCT_SYSTEM_PROPERTIES += \
+persist.device.config.runtime_native.usap_pool_enabled=true
+persist.device_config.runtime_native.usap_pool_enabled=true
+
