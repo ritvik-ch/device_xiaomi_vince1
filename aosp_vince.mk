@@ -33,6 +33,7 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 # Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK := true
+TARGET_GAPPS_ARCH := arm64
 TARGET_USES_BLUR := false
 TARGET_USES_AOSP_CHARGER := true
 TARGET_SUPPORTS_QUICK_TAP := false
