@@ -30,6 +30,10 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 # Inherit some common ProjectBlaze stuff.
 $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
+# Official
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := Ritvik
+
 # Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK := true
