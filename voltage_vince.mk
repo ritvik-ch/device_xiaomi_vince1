@@ -27,21 +27,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common AospExtended stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+# Inherit some common VoltageOS stuff.
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK := true
-TARGET_GAPPS_ARCH := arm64
 TARGET_USES_BLUR := false
 TARGET_USE_PIXEL_CHARGER := true
 TARGET_SUPPORTS_QUICK_TAP := false
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
+VOLTAGE_BUILD_TYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := aosp_vince
+PRODUCT_NAME := voltage_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
