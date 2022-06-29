@@ -60,7 +60,6 @@
     <hidden-api-whitelisted-app package="com.qualcomm.qti.telephonyservice" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.radioconfiginterface" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.roamingsettings" />
-    <hidden-api-whitelisted-app package="com.qualcomm.qti.simsettings" />
     <hidden-api-whitelisted-app package="org.codeaurora.ims" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.ims" />
     <hidden-api-whitelisted-app package="com.qti.xdivert" />
