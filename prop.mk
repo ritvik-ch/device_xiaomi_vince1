@@ -142,6 +142,7 @@ ro.config.dha_tunnable=1
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.composition.type=c2d \
+debug.sdm.support_writeback=0 \
 debug.cpurend.vsync=false \
 debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
